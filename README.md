@@ -1,6 +1,6 @@
 # Switch Dark Mode
 
-Código com botão Switch que alterna entre os temas claro e escuro da página.
+Código HTML, CSS e JS que altera o tema da página entre Light e Dark (usando botão switch).
 
 O tema escolhido pelo usuário é persistido localmente através do localStorage.
 
