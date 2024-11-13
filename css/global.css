@@ -46,7 +46,7 @@ h1 {
 }
 p {
    color: var(--color-text-toggle);
-   font-size: var(--size-xs-sm);
+   font-size: var(--size-sm);
    letter-spacing: 0;
 }
 footer p {
