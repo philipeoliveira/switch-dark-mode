@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+         name="description"
+         content="Código com botão Switch que alterna entre os temas claro e escuro da página."
+      />
+      <meta name="author" content="Philipe Oliveira" />
+
+      <link rel="stylesheet" href="./css/global.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+
+      <script src="./js/crud-localstorage.js" defer></script>
+      <script src="./js/themes.js" defer></script>
+      <script src="./js/global.js" defer></script>
+
+      <title>Botão Switch Dark Mode</title>
+   </head>
+   <body>
+      <div id="task-container" class="flex-col-center">
+         <h1>Switch Dark Mode</h1>
+         <p>Alterne entre os modos Claro e Escuro.</p>
+         <form id="form-theme">
+            <label for="theme-checkbox" title="Trocar para tema escuro">
+               <i class="fa-solid fa-sun"></i>
+               <i class="fa-solid fa-moon"></i>
+               <div class="theme-ball"></div>
+            </label>
+            <input type="checkbox" id="theme-checkbox" class="hide" />
+         </form>
+
+         <footer class="flex-col-center">
+            <p>
+               Desenvolvido por
+               <a
+                  href="https://github.com/philipeoliveira"
+                  title="Abrir em nova aba o GitHub do autor Philipe Oliveira"
+                  target="_blank"
+                  >Philipe Oliveira</a
+               >
+            </p>
+         </footer>
+      </div>
+   </body>
+</html>

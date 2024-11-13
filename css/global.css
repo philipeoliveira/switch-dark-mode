@@ -1,0 +1,134 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@500;600&display=swap');
+
+/* VARIABLES */
+:root {
+   --color-light: #fff;
+   --color-dark: #0f0500;
+   --color-primary: #6495ed;
+   --color-secondary: #a7a7a7;
+   --color-text: #a7a7a7;
+   --color-hover: #2980b9;
+
+   --color-bg-toggle: var(--color-light);
+   --color-text-toggle: var(--color-dark);
+
+   --size-xs: 0.5rem;
+   --size-xs-sm: 0.9rem;
+   --size-sm: 1rem;
+   --size-sm-md: 1.3rem;
+   --size-md: 1.5rem;
+   --size-md-lg: 1.8rem;
+   --size-lg: 2rem;
+   --size-xl: 2.5rem;
+}
+
+/* RESET */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'KoHo', sans-serif;
+   font-weight: normal;
+   letter-spacing: -1px;
+   word-break: break-word;
+   text-decoration: none;
+   list-style: none;
+   border: none;
+   outline: none;
+}
+
+body {
+   background-color: var(--color-bg-toggle);
+}
+h1 {
+   color: var(--color-text-toggle);
+}
+p {
+   color: var(--color-text-toggle);
+   font-size: var(--size-xs-sm);
+   letter-spacing: 0;
+}
+footer p {
+   color: var(--color-text-toggle);
+   font-size: var(--size-xs-sm);
+   letter-spacing: 0;
+}
+
+/* LINK */
+a {
+   color: var(--color-primary);
+   transition: color 0.3s;
+}
+a:focus,
+a:hover,
+a:active {
+   color: var(--color-hover);
+   text-decoration: underline;
+}
+a[target='_blank'] i {
+   font-size: var(--size-xs-sm);
+   padding-left: calc(var(--size-xs) / 2);
+}
+
+label,
+a {
+   cursor: pointer;
+}
+
+.flex-col-center {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.hide {
+   display: none;
+}
+.dark-theme {
+   --color-bg-toggle: var(--color-dark);
+   --color-text-toggle: var(--color-secondary);
+}
+#task-container {
+   max-width: calc(var(--size-lg) * 23);
+   height: 100vh;
+   margin: 0 auto;
+   padding: var(--size-md-lg) var(--size-lg);
+   gap: 2rem;
+}
+#form-theme {
+   flex: 1;
+}
+#form-theme label {
+   width: 52px;
+   height: 28px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border: 1px solid var(--color-primary);
+   border-radius: 50px;
+   padding: 6px 9px 6px 5px;
+   position: relative;
+   transform: scale(0.8);
+}
+#form-theme label i {
+   color: var(--color-dark);
+   font-size: var(--size-sm);
+}
+#form-theme label i.fa-sun {
+   color: var(--color-secondary);
+}
+.theme-ball {
+   width: 22px;
+   height: 22px;
+   background-color: var(--color-primary);
+   border-radius: 50%;
+   position: absolute;
+   top: 2px;
+   left: 2px;
+   transition: transform 0.3s;
+}
+.theme-ball:focus,
+.theme-ball:hover {
+   background-color: var(--color-hover);
+}
